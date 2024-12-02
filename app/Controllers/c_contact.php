@@ -59,18 +59,15 @@ class c_contact extends BaseController
             $contactModel->envoie($dataValide);
             // Message de succès
             $data = [
-                'title' => 'Good',  // Définir le titre de la page
-                'titre' => 'Oui'
+                'title' => 'Succes',  // Définir le titre de la page
+                'titre' => 'Succes'
             ];
             return view('succes_view', $data);
 
         }else{
             $data['validation'] = Services::validation();
-            $title=[
-                'title'=>'oui',
-                'titre'=>'non'
-            ];
-            return view('contact_view', $data,$title);
+            $data['title'] = 'Erreur contact';
+            return view('contact_view', $data);
         }
     }
 }
