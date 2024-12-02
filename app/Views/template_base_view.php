@@ -57,6 +57,7 @@
             ?>
         </div>
         <p>&copy; Développé par <span>GEEK_4_FUN</span> 2024-2025. Tous droits réservés.</p>
+        <?= anchor(base_url().'public/legal', 'Mentions Legals') ?>
     </div>
 </footer>
 </body>
