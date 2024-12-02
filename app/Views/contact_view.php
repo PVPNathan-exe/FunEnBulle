@@ -16,8 +16,8 @@ use Config\Services;
 
     <!-- Nom -->
     <div class="form-group">
-        <label for="nom">Nom :</label>
-        <?= form_input([
+        <?=form_label('Nom : ', 'nom');
+        echo form_input([
             'name' => 'nom',
             'id' => 'nom',
             'class' => 'form-control',
@@ -29,8 +29,8 @@ use Config\Services;
 
     <!-- Prénom -->
     <div class="form-group">
-        <label for="prenom">Prénom :</label>
-        <?= form_input([
+        <?=form_label('Prénom : ', 'prenom');
+        echo form_input([
             'name' => 'prenom',
             'id' => 'prenom',
             'class' => 'form-control',
@@ -42,8 +42,8 @@ use Config\Services;
 
     <!-- Email -->
     <div class="form-group">
-        <label for="email">Email :</label>
-        <?= form_input([
+        <?= form_label('Email : ', 'email');
+        echo form_input([
             'name' => 'email',
             'id' => 'email',
             'class' => 'form-control',
@@ -56,8 +56,8 @@ use Config\Services;
 
     <!-- Sujet -->
     <div class="form-group">
-        <label for="sujet">Sujet :</label>
-        <?= form_input([
+        <?= form_label('Sujet : ', 'sujet');
+        echo form_input([
             'name' => 'sujet',
             'id' => 'sujet',
             'class' => 'form-control',
@@ -69,12 +69,14 @@ use Config\Services;
 
     <!-- Message -->
     <div class="form-group">
-        <label for="message">Message :</label>
-        <?= form_textarea([
+
+        <?= form_label('Message : ', 'message');
+        echo form_textarea([
             'name' => 'message',
             'id' => 'message',
             'class' => 'form-control',
             'placeholder' => 'Votre message',
+            'cols' => 90,
             'rows' => '4',
             'value' => set_value('message')
         ]); ?>
@@ -82,8 +84,12 @@ use Config\Services;
     </div>
 
     <!-- Bouton d'envoi -->
-    <div class="form-group">
-        <?= form_submit('submit', 'Envoyer', ['class' => 'btn btn-primary']); ?>
+    <div>
+        <?php
+        $data = array('name'=> 'submit',
+            'id' => 'submit',
+            'value' => 'Valider');
+        echo form_submit($data); ?>
     </div>
 
     <?= form_close(); ?>
@@ -99,7 +105,7 @@ use Config\Services;
     <?php endif; ?>
 
     <?php if (isset($validation) && $validation->getErrors()): ?>
-        <div class="alert alert-danger">
+        <div class="accueil">
             <h4>Des erreurs se sont produites :</h4>
             <ul>
                 <?php foreach ($validation->getErrors() as $error): ?>
