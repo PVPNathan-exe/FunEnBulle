@@ -6,9 +6,9 @@
 @import 'footer.css';
 
 :root {
-    --couleur-principale: #389898;
+    --couleur-principale: #6db0b0;
     --couleur-texte-clair: #fcf7df;
-    --couleur-texte-fonce: #389898;
+    --couleur-texte-fonce: #6db0b0;
     --couleur-texte-dark: #333;
     --couleur-texte-secondaire: #d95301;
     --couleur-fond-clair :#fffcf7;
