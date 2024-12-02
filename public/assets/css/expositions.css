@@ -2,31 +2,32 @@
 .expositions h1{
     text-align: center;
     font-size: 2.5em;
-    color: #389898;
+    color: var(--couleur-principale);
     margin-bottom: 10px;
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-family: var(--font-principale);
 }
 .expositions p{
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
-    text-align: justify;
+    font-family: var(--font-principale);
+    text-align: center;
     font-size: 1em;
-    color: #114f4f;
+    color: var(--couleur-texte-dark);
     max-width: 1000px;      /* Largeur maxi du bloc */
     margin: 0 auto;         /* Centre le conteneur sur la page */
     padding: 10px;
+    white-space: break-spaces;
 }
 .expositions-container {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fffcf7;
+    background-color: var(--couleur-texte-clair);
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px var(--couleur-bordure);
     text-align: center;
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-family: var(--font-principale);
 }
 .expositions-container h1{
-    color :#c0392b
+    color :var(--couleur-texte-dark)
 }
 
 .exposition-grid {
@@ -40,8 +41,8 @@
     position: relative;             /* Positionne le conteneur pour l'effet absolu de l'image */
     overflow: visible;              /* Permet à l'image de sortir du cadre */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fffcf7;
+    box-shadow: 0 4px 8px var(--couleur-bordure);
+    background-color: var(--couleur-texte-clair);
     text-align: center;
 }
 

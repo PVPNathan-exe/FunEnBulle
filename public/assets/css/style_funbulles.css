@@ -5,29 +5,46 @@
 @import 'infosPratiques.css';
 @import 'footer.css';
 
+:root {
+    --couleur-principale: #389898;
+    --couleur-texte-clair: #fcf7df;
+    --couleur-texte-fonce: #389898;
+    --couleur-texte-dark: #333;
+    --couleur-texte-secondaire: #d95301;
+    --couleur-fond-clair :#fffcf7;
+    --couleur-reponse-quiz : #b77be9;
+    --couleur-bordure : #ddd;
+    --couleur-fond-moyen : #bfe2e2;
+    --couleur-rep-ok :#28a745;
+    --couleur-fond-questions : #f1f1f1;
+    --couleur-fond-bandeau-clair: #38aeca;
+    --couleur-fond-bandeau-fonce: #0e6173;
+    --font-principale : 'Comic Sans MS', 'Arial', sans-serif;
+}
+
 .accueil {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fffcf7;
+    background-color: var(--couleur-fond-clair);
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px var(--couleur-bordure);
     line-height: 1.8;
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
-    color: #333;
+    font-family: var(--font-principale);
+    color: var(--couleur-texte-dark);
 }
 
 .accueil h1 {
     text-align: center;
-    font-size: 3em;
-    color: #389898;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: var(--couleur-principale);
+    margin-bottom: 10px;
 }
 
 
 .accueil h2 {
     font-size: 1.8em;
-    color: #c0392b;
+    color: var(--couleur-texte-secondaire);
     margin-top: 30px;
 }
 
@@ -35,7 +52,7 @@
 .accueil p {
     text-align: justify;
     margin-bottom: 20px;
-    color: #444;
+    color: var(--couleur-texte-dark);
 }
 
 span {
@@ -53,7 +70,7 @@ main{
     bottom: 20px;
     right: 20px;
     z-index: 100;
-    background-color: #297373;
+    background-color: var(--couleur-principale);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -63,5 +80,5 @@ main{
 }
 
 #retourHaut:hover {
-    background-color: #389898;
+    background-color: var(--couleur-principale);
 }

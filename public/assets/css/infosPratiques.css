@@ -3,18 +3,18 @@
     max-width: 800px;
     margin: 15px auto;
     padding: 3px;
-    background-color: #fffcf7;
+    background-color: var(--couleur-fond-clair);
     border-radius: 10px;                        /* Coins arrondis */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Ombre  */
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
-    color: #333;
+    box-shadow: 0 8px 16px var(--couleur-bordure);  /* Ombre  */
+    font-family: var(--font-principale);
+    color: var(--couleur-texte-dark);
     line-height: 1.5;
     text-align: center;
 }
 
 .pratique h1 {
     font-size:2.5em;
-    color: #389898;
+    color: var(--couleur-principale);
     margin : 5px auto 0px auto;
 }
 
@@ -25,7 +25,7 @@
 
 .section h2 {
     font-size: 1.8em;
-    color: #c0392b;
+    color: var(--couleur-texte-dark);
     margin-bottom: 10px;
     margin-top: 5px;
     text-align: center;
@@ -37,14 +37,14 @@
     text-align: center;
 }
 .tarif {
-    background-color: #fff8e7;
+    background-color: var(--couleur-fond-clair);
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
 }
 
 .jour {
-    background-color: #fff8e7;
+    background-color: var(--couleur-fond-clair);
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
@@ -52,6 +52,6 @@
 
 .jour p {
     margin: 5px 0;
-    color: #444;
+    color: var(--couleur-texte-dark);
     text-align: center;
 }
