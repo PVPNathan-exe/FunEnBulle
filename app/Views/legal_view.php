@@ -20,6 +20,17 @@
     </p>
 </section>
 
+<section>
+    <h2>Protection des données personnelles</h2>
+    <p>
+        En conformité avec le <strong>Règlement Général sur la Protection des Données (RGPD)</strong>, FunEnBulles s’engage
+        à protéger les données personnelles des utilisateurs.<br>
+        <strong>Responsable des données :</strong> Monsieur Charles Hatan<br>
+        <strong>Finalité des données collectées :</strong> Répondre à vos questions<br>
+        <strong>Droit des utilisateurs :</strong> Vous disposez d’un droit d’accès, de rectification, de suppression et de portabilité
+        de vos données personnelles. Pour exercer ce droit, contactez-nous à : contact@funenbulles.fr.
+    </p>
+</section>
 
 <section>
     <h2>Propriété intellectuelle</h2>

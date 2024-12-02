@@ -13,6 +13,7 @@ $routes->get('/espace_ludique', 'c_ludique::index');
 $routes->get('/auteurs', 'c_auteurs::index');
 $routes->get('/pratique', 'c_pratique::index');
 $routes->get('/contact', 'c_contact::index');
+$routes->match(['get', 'post'],'/contact/envoie', 'c_contact::envoie');
 $routes->get('/legal', 'c_legal::index');
 $routes->match(['get', 'post'], '/validerRep', 'c_ludique::valider');
 
